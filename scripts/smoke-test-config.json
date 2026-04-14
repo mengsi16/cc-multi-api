@@ -1,0 +1,15 @@
+{
+  "port": 3456,
+  "providers": [
+    {
+      "name": "deepseek",
+      "protocol": "anthropic",
+      "baseUrl": "https://api.deepseek.com",
+      "apiKey": "PLACEHOLDER_API_KEY"
+    }
+  ],
+  "routes": {
+    "claude-sonnet-4-5": { "provider": "deepseek", "model": "deepseek-chat" },
+    "default": { "provider": "deepseek", "model": "deepseek-chat" }
+  }
+}

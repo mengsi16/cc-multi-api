@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+*.log
+.vitest/
+docs/
+tmp/
+.ccma-start.err.log
+.ccma-start.out.log
+.ccma-verify.err.log
+.ccma-verify.out.log
