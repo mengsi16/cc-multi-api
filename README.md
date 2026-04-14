@@ -1,6 +1,20 @@
+<div align="center">
+
 # cc-multi-api
 
-本地 Anthropic 兼容代理，支持多 Provider 路由 + React Web UI。通过单一 `http://localhost:3456` 端点暴露，拦截 Claude Code 请求，根据 `model` 字段智能路由到不同 Provider。
+*像配置路由一样简单，本地 Anthropic 兼容代理，支持多 Provider 路由 + React Web UI。*
+
+[![Bun](https://img.shields.io/badge/Bun-%3E%3D_1.0-black?logo=bun)](https://bun.sh/)
+[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D_18-green?logo=nodedotjs)](https://nodejs.org/)
+[![Claude Code](https://img.shields.io/badge/Claude_Code-Supported-blue?logo=anthropic)](https://claude.com/claude-code)
+
+> **Anthropic 协议透传** | **OpenAI 双向翻译** | **可视化配置面板** | **响应式日志流**
+
+</div>
+
+---
+
+通过单一 `http://localhost:3456` 端点暴露，拦截 Claude Code 请求，根据 `model` 字段智能路由到不同 Provider。
 
 ## 系统要求
 
