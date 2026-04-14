@@ -94,13 +94,16 @@ bun run start
 
 ## Claude Code 接入
 
-```bash
-# 方式一：环境变量（单次会话）
-ANTHROPIC_BASE_URL=http://localhost:3456 claude --print "say hi"
+修改settings.json
 
-# 方式二：设置默认代理（持久化）
-export ANTHROPIC_BASE_URL=http://localhost:3456
-claude --print "say hi"
+```
+{
+  "env":{
+    ...
+    "ANTHROPIC_BASE_URL": "http://localhost:3456",
+    ...
+  }
+}
 ```
 
 Claude Code 所有请求都会经过本地代理，按 `model` 字段路由到对应 Provider。
